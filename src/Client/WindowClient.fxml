@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+
+<AnchorPane prefHeight="255.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.WindowClientController">
+   <children>
+      <Pane prefHeight="260.0" prefWidth="600.0">
+         <children>
+            <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#connectToServer" text="Connect to server" />
+            <Button layoutX="15.0" layoutY="224.0" mnemonicParsing="false" onAction="#sendToServer" text="Send information to server" />
+            <TextField layoutX="15.0" layoutY="151.0" fx:id="textCommands" prefHeight="25.0" prefWidth="570.0" promptText="Commands" />
+            <TextField layoutX="15.0" layoutY="188.0" fx:id="textToServer" prefHeight="25.0" prefWidth="570.0" promptText="Text for server" />
+            <Label layoutX="15.0" layoutY="49.0" text="Commands:" />
+            <Label layoutX="80.0" layoutY="66.0" prefHeight="17.0" prefWidth="365.0" text="GPN - Получение простых чисел (Get Prime Numbers)" wrapText="true" />
+            <Label layoutX="80.0" layoutY="83.0" prefHeight="17.0" prefWidth="365.0" text="STS - Отправка чисел на сервер (Send To Server)" wrapText="true" />
+            <Label layoutX="80.0" layoutY="100.0" prefHeight="17.0" prefWidth="365.0" text="AC - Очистка массива (Array Cleaning)" wrapText="true" />
+            <Label layoutX="80.0" layoutY="117.0" prefHeight="17.0" prefWidth="365.0" text="GN - Получение чисел равных введенному числу (Get Number)" wrapText="true" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
