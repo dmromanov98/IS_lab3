@@ -43,9 +43,15 @@ public class WindowClientController implements Initializable {
     }
 
     public void sendToServer(ActionEvent actionEvent) {
-        if (textCommands.getText().length() != 0)
-            client.sendMessage(textToServer.getText(), textCommands.getText());
+        if (textCommands.getText().equals("GPN") || textCommands.getText().equals("STS")
+                || textCommands.getText().equals("AC") || textCommands.getText().equals("GN"))
+
+            if (textCommands.getText().equals("GPN") || textCommands.getText().equals("AC"))
+                client.sendCommand(textCommands.getText());
+            else
+                client.sendMessage(textToServer.getText(), textCommands.getText());
+
         else
-            JOptionPane.showMessageDialog(null, "Введите команду!");
+            JOptionPane.showMessageDialog(null, "Такой команды не существует!");
     }
 }

@@ -68,4 +68,7 @@ public class Client implements Runnable {
         }
     }
 
+    public static void sendCommand(String command){
+        Client.message = command+"$";
+    }
 }
